@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Project 4 - Interactive Photo Gallery</title>
+    <script src="js/jQuery-3.3.1.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="lightbox-plugin/lightbox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <div class="search">
+        <input type="text" name="search" value="" autocomplete="off" id="myinput" onkeyup="searchFunction()" placeholder="Search (16pt)">
+      </div>
+    </header>
+    <div class="four-col clearfix">
+    <ul id="wrapper" class="clearfix">
+      <li>
+        <a href="img/01.jpg" data-lightbox="image-gallery" data-title="I love hay bales. Took this snap on a drive through the countryside past some straw fields.">  
+          Hay Bales. I love hay bales. Took this snap on a drive through the countryside past some straw fields.
+          <img src="img/thumbnails/01.jpg" alt="Hay Bales">
+        </a>
+      </li>
+      <li>
+        <a href="img/02.jpg" data-lightbox="image-gallery" data-title="The lake was so calm today. We had a great view of the snow on the mountains from here.">   
+          Lake. The lake was so calm today. We had a great view of the snow on the mountains from here.
+          <img src="img/thumbnails/02.jpg" alt="The lake">
+        </a>
+      </li>
+      <li>
+        <a href="img/03.jpg" data-lightbox="image-gallery" data-title="I hiked to the top of the mountain and got this picture of the canyon and trees below.">
+          Canyon. I hiked to the top of the mountain and got this picture of the canyon and trees below.
+          <img src="img/thumbnails/03.jpg" alt="Canyon">
+        </a>
+      </li>
+      <li>
+        <a href="img/04.jpg" data-lightbox="image-gallery" data-title="It was amazing to see an iceberg up close, it was so cold but didn’t snow today.">
+          Iceberg. It was amazing to see an iceberg up close, it was so cold but didn’t snow today.
+          <img src="img/thumbnails/04.jpg" alt="Iceberg">
+        </a>
+      </li>
+      <li>
+        <a href="img/05.jpg" data-lightbox="image-gallery" data-title="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.">
+          Desert. The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.
+          <img src="img/thumbnails/05.jpg" alt="Desert">
+        </a>
+      </li>
+      <li>
+        <a href="img/06.jpg" data-lightbox="image-gallery" data-title="Fall is coming, I love when the leaves on the trees start to change color.">
+          Fall. Fall is coming, I love when the leaves on the trees start to change color.
+          <img src="img/thumbnails/06.jpg" alt="Fall">
+        </a>
+      </li>
+      <li>
+        <a href="img/07.jpg" data-lightbox="image-gallery" data-title="I drove past this plantation yesterday, everything is so green!">
+          Plantation. I drove past this plantation yesterday, everything is so green!
+          <img src="img/thumbnails/07.jpg" alt="Plantation">
+        </a>
+      </li>
+      <li>
+        <a href="img/08.jpg" data-lightbox="image-gallery" data-title="My summer vacation to the Oregon Coast. I love the sandy dunes!">
+          Dunes. My summer vacation to the Oregon Coast. I love the sandy dunes!
+          <img src="img/thumbnails/08.jpg" alt="Dunes">
+        </a>
+      </li>
+      <li>
+        <a href="img/09.jpg" data-lightbox="image-gallery" data-title="We enjoyed a quiet stroll down this countryside lane.">
+          Countryside Lane. We enjoyed a quiet stroll down this countryside lane.
+          <img src="img/thumbnails/09.jpg" alt="Countryside">
+        </a>
+      </li>
+      <li>
+        <a href="img/10.jpg" data-lightbox="image-gallery" data-title="Sunset at the coast! The sky turned a lovely shade of orange.">
+          Sunset. Sunset at the coast! The sky turned a lovely shade of orange.
+          <img src="img/thumbnails/10.jpg" alt="Sunset">
+        </a>
+      </li>
+      <li>
+        <a href="img/11.jpg" data-lightbox="image-gallery" data-title="I did a tour of a cave today and the view of the landscape below was breathtaking.">
+          Cave. I did a tour of a cave today and the view of the landscape below was breathtaking.
+          <img src="img/thumbnails/11.jpg" alt="Cave">
+        </a>
+      </li>
+      <li>
+        <a href="img/12.jpg" data-lightbox="image-gallery" data-title="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.">
+          Bluebells. I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.
+          <img src="img/thumbnails/12.jpg" alt="Bluebells">
+        </a>
+      </li>
+    </ul>
+    </div>
+    <script src="lightbox-plugin/lightbox.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

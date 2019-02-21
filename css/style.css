@@ -1,0 +1,240 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+/**************************/
+header {
+  width: 100%;
+  height: 100px;
+}
+
+.search {
+  width: 59%;
+  height: 50px;
+  margin-left: 20%;
+  padding-top: 20px;
+}
+
+#myinput {
+  width: 100%;
+  border: 2px solid lightgrey;
+  padding: 7px;
+  height: 35px;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 10px;
+  font-size: 13.5px;
+  color: grey;
+}
+
+#myinput::-webkit-search-cancel-button{
+  display: none!important;
+}
+
+/******* Gallery *******/
+
+.four-col {
+  width: 80%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+
+li {
+  display: inline-block;
+  margin: 10px;
+}
+
+li a {
+  font-size: 0;
+}
+
+
+/*Lightbox-plugin*/
+.lightboxOverlay {
+  background: #000;
+  opacity: .9;
+}
+
+.lb-nav a.lb-next {
+  display: block!important;
+  position: absolute;
+  width: 11%;
+  right: -20px;
+}
+
+.lb-nav a.lb-prev {
+  display: block!important;
+  width: 11%;
+  position: absolute;
+  left: -20px;
+}
+
+.lb-close {
+  position: absolute;
+  top: -30px;
+  right: 1%;
+}
+
+.lb-data .lb-details {
+  width: 450px;
+  margin-top: 20px;
+  margin-left: 10%;
+}
+.lb-data .lb-caption {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.lb-number {
+  display: none!important;
+}
+
+/******************************--- Media Queries ---********************************/
+
+
+@media all and (min-width: 493.5px) {
+
+  .search {
+    max-width: 282px;
+    height: 95px;
+    margin: 0 auto;
+    padding-top: 22px;
+  }
+
+  #myinput {
+    max-width: 280px;
+  }
+  
+  /******* Gallery *******/
+  
+  .four-col {
+    width: 100%;
+    max-width: 490px;
+  }
+  
+  li {
+    margin: 7.5px 1.93%;
+  }
+  
+  
+}
+
+@media all and (min-width: 761px) {
+ 
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .search {
+    width: 41%;
+    max-width: 400px;
+    padding-top: 27px;
+  }
+  
+  #myinput {
+    max-width: 400px;
+  }
+  
+  /******* Gallery *******/
+
+  .four-col {
+    max-width: 750px;
+  }
+  
+  
+  li {
+    float: left;
+    margin: 10px 1.98%;
+  }
+  
+  /*Lightbox-plugin*/
+  .lb-nav a.lb-next {
+    right: -25px;
+  }
+  
+  .lb-nav a.lb-prev {
+    left: -25px;
+  }
+  
+  .lb-close {
+    right: 7%;
+  }
+  
+  .lb-data .lb-details {
+    width: 600px;
+    margin-top: 30px;
+  }
+  .lb-data .lb-caption {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  
+}
+
+@media all and (min-width: 820px) {
+  
+  .lb-close {
+    right: 10%;
+  }
+  
+  .lb-data .lb-details {
+    margin-top: 20px;
+  }
+}
+
+
+@media all and (min-width: 1058px) {
+  
+  .search {
+    height: 100%;
+    padding-top: 40px;
+    max-width: 470px;
+  }
+  
+  #myinput {
+    padding-left: 10px;
+    height: 43px;
+    max-width: 100%;
+  }
+  
+  /******* Gallery *******/
+  .four-col {
+    max-width: 1050px;
+  
+  }
+  
+  #wrapper {
+    width: 1042px;
+    margin-top: 4px;
+    margin-left: -15px;
+  }
+  
+  
+  li {
+    margin: 25px 25px;
+  }
+  
+  .lb-nav a.lb-next {
+    right: -100px;
+  }
+  
+  .lb-nav a.lb-prev {
+    left: -100px;
+  }
+  
+  .lb-close {
+    left: 1100px;
+  }
+  
+}
+
+
+
